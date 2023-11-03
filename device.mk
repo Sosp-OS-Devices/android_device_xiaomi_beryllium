@@ -241,15 +241,11 @@ PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3.vendor
 
 # Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay
+    
+# RRO Overlays
 PRODUCT_PACKAGES += \
-    BerylliumCarrierConfigOverlay \
-    BerylliumFaceUnlockServiceOverlay \
-    BerylliumFrameworksOverlay \
-    BerylliumNoCutoutOverlay \
-    BerylliumSettingsOverlay \
-    BerylliumSettingsProviderOverlay \
-    BerylliumSystemUIOverlay \
-    BerylliumTelephonyOverlay \
     TetheringConfigOverlay \
     WifiOverlay
 
